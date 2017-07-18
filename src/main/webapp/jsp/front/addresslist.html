@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>收货地址</title>
+		<link rel="stylesheet" href="css/spxq.css" />
+		<link rel="stylesheet" type="text/css" href="css/swipe.css">
+		<script type="text/javascript" src="js/touch.js"></script>
+		<style>
+			.item{
+				margin:10px 10px;
+				background: #FFFFFF;
+				padding: 10px 10px;
+				border-radius: 5px;
+			} 
+			.item.sel{
+				box-shadow: 5px 5px 5px #888888;
+			}
+			.item p:nth-child(3){
+				height: 20px;
+			}
+			.default{
+				float: right;color: #20b1aa ;
+			}
+			.default.sel{
+				color: #15948e ;
+			}
+			.red{
+				color: red;
+				margin-left: 10px;
+			}
+			.add{
+				margin:10px 10px;
+				line-height: 70px;
+				text-align: center;
+				border: dashed 1px #20b1aa;
+				display: block;
+				color: #20b1aa;
+				border-radius: 5px;
+			}
+		</style>
+	</head>
+
+	<body  style="background: #f4f4f4;">
+		<div class="body">
+			<div class="tour" style=" background:#20b1aa;color: #FFFFFF;border:none;">
+				<a href="#"   onclick="javascript:history.go(-1);" class="tour1"><img src="img/back.png" alt="" style="height: 26px;width: 20px"></a>
+				<p class="toph">
+					<p>收货地址</p>
+				</p>
+			</div>
+			<div>
+				<div class="item sel">
+					<p>地址：广东省广州市越秀区中山六路109 距离市中心约6487米</p>
+					<p>收货人：张三  15268551627</p>
+					<p><a class="default sel">默认地址</a></p>
+				</div>
+				
+				
+				<div class="item">
+					<p>地址：广东省广州市越秀区中山六路109 距离市中心约6487米</p>
+					<p>收货人：张三  15268551627</p>
+					<p><a class="default red">删除</a><a class="default" href="#">设为默认地址</a></p>
+				</div>
+				
+				<a class="add" href="address.html">
+					添加新地址
+				</a>
+				
+			</div>
+		</div>	 
+	</body>
+
+</html>

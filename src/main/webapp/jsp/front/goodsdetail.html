@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+	<head lang="en">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1">
+		<title>商品详情</title>
+		<link rel="stylesheet" href="css/spxq.css" />
+		<link rel="stylesheet" type="text/css" href="css/swipe.css">
+		<script type="text/javascript" src="js/touch.js"></script>
+		<style>
+			.leftd{
+				line-height: 45px;width:40%;text-align: center;font-size: 16px;background:#FFFFFF;
+			}
+			.rightd{
+				line-height: 45px;width:60%;text-align: center;background:#20b1aa;color: #FFFFFF;font-size: 18px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="body">
+			<div class="tour" style=" background:#20b1aa;color: #FFFFFF;border:none;">
+				<a href="#" onclick="javascript:history.go(-1);" class="tour1"><img src="img/back.png" alt="" style="height: 26px;width: 20px"></a>
+				<p>商品详情</p>
+				<a href="myList.html" class="tour2"><img src="img/u65.png" alt="" style="width: 35px;height: 35px"></a>
+			</div>
+			<figure style="border:none;background: #f6f6f6;">
+				<div class="addWrap">
+					<div class="swipe" id="mySwipe">
+						<div class="swipe-wrap">
+							<div>
+								<a href="javascript:;"><img class="img-responsive" src="img/u67.png" /></a>
+							</div>
+							<div>
+								<a href="javascript:;"><img class="img-responsive" src="img/u67.png" /></a>
+							</div>
+							<div>
+								<a href="javascript:;"><img class="img-responsive" src="img/u67.png" /></a>
+							</div>
+						</div>
+					</div>
+					<ul id="position">
+						<li class="cur"></li>
+						<li class=""></li>
+						<li class=""></li>
+					</ul>
+				</div>
+				<!-- 轮播 -->
+				<script src="js/swipe.js"></script>
+				<script type="text/javascript">
+					var bullets = document.getElementById('position').getElementsByTagName('li');
+					var banner = Swipe(document.getElementById('mySwipe'), {
+						auto: 3000,
+						continuous: true,
+						disableScroll: false,
+						callback: function(pos) {
+							var i = bullets.length;
+							while(i--) {
+								bullets[i].className = ' ';
+							}
+							bullets[pos].className = 'cur';
+						}
+					});
+				</script>
+				<p>全部商品</p>
+				<div class="info">
+					<em class="sat">￥100</em>
+					<a href="commentlist.html"><button type="button" class="btn">评价0</button></a>
+			</figure>
+
+			<div class="sjxx">
+				<div style="margin: 10px 10px;">
+					<h3>商品詳情</h3><br>
+					<div>拔丝糕、黄金拔丝蛋糕，是一种特色小吃甜点，是由糖、鸡蛋、面粉、玉米淀粉等优质原料精心制作而成，外表柔美，品尝一口，甜而不腻，老少皆宜，有肉松的口感但是却比肉松软，淡淡的清香，当拔丝和蛋糕相结合，丝丝相连的美味变成挡不住的诱惑，忍不住就想吃，而这种拔丝蛋糕个头很小吃起来很方便、制作蛋糕的每一分材料都是用心采集、精心制作的。糕点用手一掰，因中间有长长的丝相连接而得名：拔丝蛋糕。</div>
+				</div>
+				<div style="height: 50px;"></div>
+			</div>
+
+			<div class="wx_nav" id="wx_nav">
+				<div class="leftd">总计：67元</div>
+				<div class="rightd" onclick="javascript:window.location='shopping.html'">加入购物车</div>
+			</div>
+	</body>
+
+</html>
