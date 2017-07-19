@@ -11,7 +11,7 @@
  	<section class=" content mCustomScrollbar">
 		<div class="rt_content">
 			<div class="page_title">
-				<h2 class="fl">一级种类管理</h2>
+				<h2 class="fl">一级目录管理</h2>
 				<a class="fr top_rt_btn PLsubmitForm" href="${ctx }/kind/pldel">批量删除</a>
 				<a class="fr top_rt_btn PLsubmitForm" href="${ctx }/kind/plnouse">批量禁用</a>
 				<a class="fr top_rt_btn PLsubmitForm" href="${ctx }/kind/pluse">批量启用</a>
