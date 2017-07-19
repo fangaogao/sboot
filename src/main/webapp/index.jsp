@@ -9,7 +9,7 @@
 </head>
 <body>
 <script type="text/javascript">
-window.location="${pageContext.request.contextPath}/jsp/admin/cmg/login";
+window.location="${pageContext.request.contextPath}/jsp/front/index";
 </script>
 </body>
 </html>

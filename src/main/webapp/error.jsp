@@ -9,12 +9,12 @@
 <body>
 	<table align="center" style="margin-top: 100px;">
 		<tr>
-			<td><img src="404.jpg" style="width: 200px; margin-right: 20px"></td>
+			<td><img src="${pageContext.request.contextPath}/404.jpg" style="width: 200px; margin-right: 20px"></td>
 			<td>
 				<h1>
-					é¡µé¢æ¾ä¸å°äº,<span id="ts">10</span>så&nbsp;<a href="index_index.do">è¿å<a>&nbsp;é¦é¡µ
+					您访问的页面找不到了，还剩<span id="ts">10</span>s&nbsp;<a href="${pageContext.request.contextPath}/jsp/front/index">返回</a>&nbsp;首页
 				</h1>
-				<h4>&nbsp;<a href="login_login.do">è¿åç®¡çåç»éé¡µé¢<a></h4>
+				<h4>&nbsp;<a href="${pageContext.request.contextPath}/jsp/admin/cmg/login">返回后台</a></h4>
 			</td>
 		</tr>
 	</table>
@@ -26,7 +26,7 @@ var seti=setInterval(function(){
 	document.getElementById("ts").innerHTML=ts;
 	if(ts<1){
 		clearInterval(seti);
-		window.location="index_index.do";
+		window.location="${pageContext.request.contextPath}/jsp/front/index";
 	}
 }, 1000);
 </script>
