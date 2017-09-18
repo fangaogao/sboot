@@ -83,14 +83,14 @@ $('#back').click(function(){
 	var form=$(this).parent();
 	$(form).find('input[type=text]').val('');
 })
-
+/*列表按钮点击，提交form*/
 $('.submitForm').click(function(){
 	$('#submitId').val($(this).attr('data-id'));
 	$('#submitForm').attr('action',$(this).attr('href')).submit();
 	return false;
 });
 
-
+/*批量按钮点击，提交form*/
 $('.PLsubmitForm').click(function(){
 	var all=$('.checkBox:checked');
 	if(all.length==0){
